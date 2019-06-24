@@ -36,24 +36,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1>Hello world!</h1>
 	<p>Lorem ipsum</p>
 	<br><br>
-	<a href="#" onclick="dataLayer.push({
+		<a href="#" onclick="dataLayer.push({
+			     'ordervalue': 50,
  'event': 'buyok',
   'ecommerce': {
 	'currencyCode': 'RUB',  //добавить currencyCode RUB
     'purchase': {
       'actionField': {
-        'id': 'T12345',                         // Transaction ID. Required for purchases and refunds.
-        'revenue': '35.43',
+        'id': 'Thrw24996355',                         // Transaction ID. Required for purchases and refunds.
+        'revenue': '50',
       },
       'products': [{                            // List of productFieldObjects.
         'name': '1 Throw', 						//Обязательное поле - пишем число бросков.
 		'brand': 'Throws',						//фиксировано для всех бросков
-        'price': '15.25',						//стоимость указанного числа бросков, актуальная на момент покупки (для учета распродаж)
+        'price': '50',						//стоимость указанного числа бросков, актуальная на момент покупки (для учета распродаж)
         'quantity': 1,                          //число покупок, фиксировано для всех бросков
        }]
     }
   }
-			     });">Отправить покупку броска</a>
+			     });">Отправить покупку 5 бросков</a><br>
+	
+	<a href="#" onclick="dataLayer.push({
+			     'ordervalue': 240,
+ 'event': 'buyok',
+  'ecommerce': {
+	'currencyCode': 'RUB',  //добавить currencyCode RUB
+    'purchase': {
+      'actionField': {
+        'id': 'Thrw2499625',                         // Transaction ID. Required for purchases and refunds.
+        'revenue': '240',
+      },
+      'products': [{                            // List of productFieldObjects.
+        'name': '5 Throws', 						//Обязательное поле - пишем число бросков.
+		'brand': 'Throws',						//фиксировано для всех бросков
+        'price': '240',						//стоимость указанного числа бросков, актуальная на момент покупки (для учета распродаж)
+        'quantity': 1,                          //число покупок, фиксировано для всех бросков
+       }]
+    }
+  }
+			     });">Отправить покупку 5 бросков</a><br>
+
+
 <!-- код отправки команды ec purchase -->
 
 	<!-- <script>
